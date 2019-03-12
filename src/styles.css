@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* postcss([ require('postcss-trolling') ])
+
+trolling({
+  blurBlink: {
+    time: '20s'
+  }
+}); */
+.App {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  height: 80vh;
+  width: 80vw;
+  border: 1px solid black;
+  flex-direction: row;
+}
+.cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 50vh;
+  width: 50vw;
+}
+h1 {
+  position: sticky;
+  /* justify-content: space-evenly; */
+  top: 0;
+  display: flex;
+  /* margin: 0 auto;
+  margin-top: 0; */
+  align-items: center;
+  align-content: center;
+  color: red;
+}
+.table {
+  position: sticky;
+  top: 0;
+}
+.box {
+  height: 5em;
+  width: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  text-decoration: underline;
+  text-decoration-color: red;
+  /* margin: 2em; */
+}
+.btn {
+  width: 15em;
+  justify-content: space-evenly;
+  display: flex;
+  height: 3em;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 0.8em;
+  font-weight: 500;
+  /* border: 1px solid #ce0814; */
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #999;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 10px cyan;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn {
+  background-image: linear-gradient(to right, white 0%, cyan 51%, white 100%);
+}
